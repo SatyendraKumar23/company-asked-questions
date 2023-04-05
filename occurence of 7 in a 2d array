@@ -1,0 +1,21 @@
+public class occurence {
+    public static void reoccurence(int arr[][])
+    {
+        int count7=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr[0].length;j++)
+            {
+                if(arr[i][j]==7)
+                {
+                    count7++;
+                }
+            }
+        }
+        System.out.println(count7);
+    }
+    public static void main(String[] args) {
+        int arr[][]={{1,2,7,8},{7,8,9,0}};
+        reoccurence(arr);
+    }
+}
