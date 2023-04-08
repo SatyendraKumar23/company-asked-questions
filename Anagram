@@ -1,0 +1,40 @@
+
+
+import java.util.*;
+public class anagram {
+public static void main(String[] args) {
+    String str1="earth";
+    String str2="heart";
+
+    str1=str1.toLowerCase();
+    str2=str2.toLowerCase();
+
+    if(str1.length()==str2.length())
+    {
+        //convert to chararray
+        char str1chararray[]=str1.toCharArray();
+        char str2chararray[]=str2.toCharArray();
+
+    //sorted
+    Arrays.sort(str1chararray);
+    Arrays.sort(str2chararray);
+
+    //chekcimh
+    boolean result=Arrays.equals(str1chararray,str2chararray);
+    if(result==true)
+    {
+        System.out.println("yes it is anagram");
+    }
+    else{
+        System.out.println("not a anagram");
+    }
+    
+    
+    }
+    else{
+        System.out.println("not a anagram");
+    }
+
+}
+    
+}
