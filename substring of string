@@ -1,0 +1,20 @@
+public class substring {
+    public static String string(String str,int si,int ei)
+    {
+        String substrng=new String("");
+        for(int i=si;i<ei;i++)
+        {
+            substrng=substrng+str.charAt(i);
+
+        }
+        return substrng;
+    }
+    public static void main(String[] args) {
+        String str="helloworld";
+        int si=1;
+        int ei=5;
+        System.out.println(string(str,si,ei));
+        
+    }
+    
+}
