@@ -1,0 +1,17 @@
+public class bitwiseOR {
+    public static void main(String[] args) {
+        System.out.println((5 | 6));
+
+        //XOR
+        System.out.println((5 ^ 6));
+
+        //nor~
+        System.out.println((~5));
+
+        //binaryleftshift
+        System.out.println((5<<2));
+
+        //binaryrightshift
+        System.out.println((5>>2));
+    }
+}
