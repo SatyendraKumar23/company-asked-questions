@@ -1,0 +1,19 @@
+/Swap two numbers without using any thirdvariable
+
+public class swap {
+
+    //Solution 2:The idea is to use XOR operators toswap two numbers by their propertyx ^ x = 0
+    
+    public static void main(String[] args) {
+        int x=3;
+        int y=4;
+
+        x=x^y;
+        y=x^y;
+        x=x^y;
+
+        System.out.println("x is: " +x);
+        System.out.println("y is: "+y);
+    }
+    
+}
