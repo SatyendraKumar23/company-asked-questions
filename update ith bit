@@ -1,0 +1,34 @@
+public class updateithbit {
+    public static int  clearbit(int n,int i)
+    {
+        int bitmask=~(1<<i);
+        return n&bitmask;
+
+    }
+    public static void update(int n,int i,int newbit)
+    {
+        n=clearbit(n,i);
+        int bitmask=newbit<<i;
+        System.out.println(n| bitmask);
+    }
+    // clear  last ith bit
+    public static void clearlastibit(int n2,int ith)
+    {
+        int bitmask=(~0)<<ith;
+        System.out.println(n2 & bitmask);
+    }
+
+    public static void main(String[] args) {
+        int n =10;
+        int i=2;
+        
+        int newbit=1;
+        clearbit(n,i);
+        update(n,i,newbit);
+
+        int n2=15;
+        int ith=2;
+        clearlastibit(n2,ith);
+
+    }
+}
