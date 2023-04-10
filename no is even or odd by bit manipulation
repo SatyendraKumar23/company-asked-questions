@@ -1,0 +1,20 @@
+public class evenodd {
+    public static void evenorodd(int n)
+    {
+        int bitmask=1;
+        if((n & bitmask)==0)
+        {
+            System.out.println("number is even");
+        }
+        else{
+            System.out.println("not a even");
+        }
+
+    }
+    public static void main(String[] args) {
+        
+        int n=22;
+        evenorodd(n);
+    }
+    
+}
