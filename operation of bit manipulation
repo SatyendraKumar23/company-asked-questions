@@ -1,0 +1,44 @@
+public class operations {
+    // get ith bit
+    public static void bit(int n,int ith)
+    {
+        int bitmask=1<<ith;
+        if((n & bitmask)==0)
+        {
+            System.out.println("ith bit is 0");
+        }
+        else{
+            System.out.println("ith bit is 1");
+        }
+
+    }
+    //set ith bit
+    public static void bit2(int n2,int ith2)
+    {
+        int bitmask=1<<ith2;
+        System.out.println(n2|bitmask);
+
+    }
+    public static void bit3(int n3,int ith3)
+    {
+        int bitmask=~(1<<ith3);
+        System.out.println(n3 & bitmask);
+    }
+    public static void main(String[] args) {
+        int n=6;
+        int ith=3;
+        bit(n,ith);
+        //set ith bit
+        int n2=10;
+        int ith2=2;
+        bit2(n2,ith2);
+
+        //clear ith bit
+        int n3=10;
+        int ith3=2;
+        bit3(n3,ith3);
+
+    }
+    
+    
+}
