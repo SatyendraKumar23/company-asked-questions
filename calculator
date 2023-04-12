@@ -1,0 +1,22 @@
+//function overriding:- multiple function with a same name but different parametrs
+public class claculator {
+    public static void main(String[] args) {
+        claculators clac=new claculators();
+        System.out.println(clac.sum(1,2));
+        System.out.println(clac.sum((float)1.0,(float)2.0));
+        
+    }
+    
+}
+class claculators{
+    int sum(int a,int b)
+    {
+        return a+b;
+    }
+    float sum(float a,float b){
+        return a+b;
+
+    }
+
+
+}
