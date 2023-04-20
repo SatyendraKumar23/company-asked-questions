@@ -1,0 +1,30 @@
+public class backtracking{
+    public static void printarr(int arr[])//prtint array
+    {
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void backtrackingarray(int arr[],int i,int val)
+    {
+        if(i==arr.length)
+        {
+            printarr(arr);
+            return;
+        }
+        
+        //kaam recursion
+        arr[i]=val;
+        backtrackingarray(arr,i+1,val+1);
+        //backtracking
+        arr[i]=arr[i]-2;
+    }
+    public static void main(String[] args) {
+        int arr[]=new int[5];
+        int i=0;
+        int val=1;
+        backtrackingarray(arr,i,val);
+        printarr(arr);
+    }
